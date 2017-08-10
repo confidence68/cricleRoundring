@@ -15,6 +15,7 @@
 	 * @param {type} capType 类型：round是圆角，square正方形顶帽，butt是正常
 	 * @param {type} percentArray ，数字，每个占据的百分比
 	 * @param {type} startAngle 开始的角度
+	 * @param {type} criclex，cricley 圆心坐标，一般是canvas的一半，例如：canvas给的宽度是250，高度是250，那么criclex是125
 	 * @returns {Circle} 
 
 
@@ -25,7 +26,7 @@
 	            var canvas = document.getElementById('canvas');
 	            var ctx = canvas.getContext('2d');
 	            var ring = new Ring("80", "25", "#ccc", ["#a1b91d", "#e9636a", "#e7ba21"], "round");
-	            ring.drawRing(ctx, 2 * Math.PI / 3, [20, 50, 30]);//占据的百分比分别是20%，50%，30%
+	            ring.drawRing(ctx, 2 * Math.PI / 3, [20, 50, 30],125,125);//占据的百分比分别是20%，50%，30%,圆心是125，,125
 
 
 
