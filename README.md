@@ -13,6 +13,8 @@
 	 * @param {type} strokeStyle 默认背景
 	 * @param {type} fillStyleArray 数组，圆环色块颜色
 	 * @param {type} capType 类型：round是圆角，square正方形顶帽，butt是正常
+	 * @param {type} percentArray ，数字，每个占据的百分比
+	 * @param {type} startAngle 开始的角度
 	 * @returns {Circle} 
 
 
