@@ -25,7 +25,7 @@
 	            var canvas = document.getElementById('canvas');
 	            var ctx = canvas.getContext('2d');
 	            var ring = new Ring("80", "25", "#ccc", ["#a1b91d", "#e9636a", "#e7ba21"], "round");
-	            ring.drawRing(ctx, 2 * Math.PI / 3, [20, 50, 30]);
+	            ring.drawRing(ctx, 2 * Math.PI / 3, [20, 50, 30]);//占据的百分比分别是20%，50%，30%
 
 
 
