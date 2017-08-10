@@ -7,25 +7,25 @@
 
 ## 参数
 
-`` 
- * @param {type} radius 圆环半径
- * @param {type} lineWidth 圆环宽度
- * @param {type} strokeStyle 默认背景
- * @param {type} fillStyleArray 数组，圆环色块颜色
- * @param {type} capType 类型：round是圆角，square正方形顶帽，butt是正常
- * @returns {Circle} 
 
-``
+	 * @param {type} radius 圆环半径
+	 * @param {type} lineWidth 圆环宽度
+	 * @param {type} strokeStyle 默认背景
+	 * @param {type} fillStyleArray 数组，圆环色块颜色
+	 * @param {type} capType 类型：round是圆角，square正方形顶帽，butt是正常
+	 * @returns {Circle} 
+
+
 
 ## 使用方法
 
-`` 
-            var canvas = document.getElementById('canvas');
-            var ctx = canvas.getContext('2d');
-            var ring = new Ring("80", "25", "#ccc", ["#a1b91d", "#e9636a", "#e7ba21"], "round");
-            ring.drawRing(ctx, 2 * Math.PI / 3, [20, 50, 30]);
 
-``
+	            var canvas = document.getElementById('canvas');
+	            var ctx = canvas.getContext('2d');
+	            var ring = new Ring("80", "25", "#ccc", ["#a1b91d", "#e9636a", "#e7ba21"], "round");
+	            ring.drawRing(ctx, 2 * Math.PI / 3, [20, 50, 30]);
+
+
 
 ## demo案例
 
