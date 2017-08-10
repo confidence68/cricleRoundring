@@ -29,3 +29,5 @@
 
 ## demo案例
 
+http://resource.haorooms.com/uploads/demo/canvas/cricleRoundring/yuanhuan.html
+
