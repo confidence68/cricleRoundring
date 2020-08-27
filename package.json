@@ -1,0 +1,20 @@
+{
+  "name": "beyondEcharts",
+  "version": "1.0.0",
+  "description": "项目中有用到一些常用图表库没有的图表,就此收集下,现在有圆角环形图",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BruceWang99/cricleRoundring.git"
+  },
+  "keywords": ["圆角环形图", "环形图"],
+  "author": "haorooms、brucewang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BruceWang99/cricleRoundring/issues"
+  },
+  "homepage": "https://github.com/BruceWang99/cricleRoundring#readme"
+}
