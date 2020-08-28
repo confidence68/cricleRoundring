@@ -191,6 +191,6 @@ const option = {
 
 [echarts Api文档](https://echarts.apache.org/en/api.html)        
 
-## demo
+## demo 
 
 https://github.com/BruceWang99/cricleRoundring/blob/master/demo/index.html
