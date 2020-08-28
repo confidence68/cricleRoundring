@@ -1,5 +1,5 @@
 import { inheritPrototype } from "./utils";
-import { Circle } from "./cricle";
+import Circle  from "./cricle";
 
 
 /**

@@ -1,4 +1,4 @@
-import { Ring } from './ring';
+import Ring from './ring';
 /**
  * Charts 构造函数
  */
