@@ -12,6 +12,8 @@ npm i beyond-echarts
 ```
 ### 页面使用1
 ```
+import Charts from "beyond-echarts";
+
 const container = document.querySelector('#pie');
 charts.init(container);
 charts.setOption(option);
@@ -19,6 +21,7 @@ charts.setOption(option);
 ### 页面使用2
 ```
 <script type="text/javascript"  src="../dist/beyond-echarts.js"></script>
+
 <script type="text/javascript">
     const container = document.querySelector('#pie');
     beyondEcharts.init(container);
