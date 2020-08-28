@@ -193,4 +193,4 @@ const option = {
 
 ## demo 
 
-https://github.com/BruceWang99/cricleRoundring/blob/master/demo/index.html
+https://brucewang99.github.io/beyond-echarts/demo/index.html
