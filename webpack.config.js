@@ -11,7 +11,7 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
+        filename: 'beyond-echarts.js',
         library: 'beyondEcharts', 
         libraryExport: 'default',
         libraryTarget: 'umd',
