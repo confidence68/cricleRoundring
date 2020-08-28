@@ -2,7 +2,7 @@
 
 
 
-项目中有用到一些常用图表库没有的图表,就此收集下,现在有圆角环形图
+项目中有用到一些常用图表库没有的图表,就此收集下,现在只有圆角环形图
 
 ## 使用方法
 
@@ -85,7 +85,7 @@ const option = {
                 }             
 ```
 
-[echarts Api文档](https://echarts.apache.org/en/api.html)            
+[echarts Api文档](https://echarts.apache.org/en/api.html)        
 
 ## demo
 
