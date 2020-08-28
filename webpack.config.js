@@ -2,7 +2,7 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: process.env.NODE_ENV,
+    mode: 'production',
     entry: {
         app: './src/index.js',
     },
@@ -12,6 +12,9 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
+        library: 'beyondEcharts', 
+        libraryExport: 'default',
+        libraryTarget: 'umd',
     },
     module: {
         rules: [
