@@ -33,6 +33,7 @@ charts.setOption(option);
 
 ## 配置 (和echarts一样)
 
+
 ```
 const option = {
                         series:[ {
@@ -99,7 +100,7 @@ const option = {
                                 },
                             ]
                         }]
-                }             
+                }            
 ```
 
 [echarts Api文档](https://echarts.apache.org/en/api.html)        
