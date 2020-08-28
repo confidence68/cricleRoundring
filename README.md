@@ -6,12 +6,26 @@
 
 ## 使用方法
 
+### 安装
 ```
-npm install beyondecharts
-import charts from 'beyondecharts';
+npm i beyond-echarts
+```
+### 页面使用1
+```
 const container = document.querySelector('#pie');
 charts.init(container);
 charts.setOption(option);
+```
+### 页面使用2
+```
+<script type="text/javascript"  src="../dist/beyond-echarts.js"></script>
+<script type="text/javascript">
+    const container = document.querySelector('#pie');
+    beyondEcharts.init(container);
+    beyondEcharts.setOption(option1);
+</script>
+```
+
 ```
 
 ## 配置 (和echarts一样)
@@ -88,8 +102,5 @@ const option = {
 [echarts Api文档](https://echarts.apache.org/en/api.html)        
 
 ## demo
-
-
-
 https://github.com/BruceWang99/cricleRoundring/blob/master/demo/index.html
 
