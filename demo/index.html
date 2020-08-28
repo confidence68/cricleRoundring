@@ -10,20 +10,13 @@
         <meta content="圆角环形" name="keywords" />
         <meta content="圆角环形" name="description" />
         <title>圆角环形</title>
-        <script type="text/javascript"  src="../src/index.js"></script>
     </head>
 
     <body>
         <div id="pie" style="width: 300px; height: 300px;"></div>
         <div id="pi2" style="width: 300px; height: 300px;"></div>
-        <!-- <canvas id="canvas" width="250" height="250"></canvas> -->
-        <!-- <script type="text/javascript">
-            var canvas = document.getElementById('canvas');
-            var ctx = canvas.getContext('2d');
-            var ring = new Ring("80", "25", "#ccc", ["#a1b91d", "#e9636a", "#e7ba21"], "round");
-            console.log('ring', ring);
-            ring.drawRing(ctx, 2 * Math.PI / 3, [20, 50, 30],125,125);
-        </script> -->
+        <script type="text/javascript"  src="../dist/main.js">
+        </script>
         <script>
            (function(){
             const option1 = {
@@ -122,14 +115,12 @@
                     ]
                 }]
             }
-            
-                const chart = new Charts();
-                const container = document.querySelector('#pie');
-                chart.init(container);
-                chart.setOption(option1);
-                const container2 = document.querySelector('#pi2');
-                chart.init(container2);
-                chart.setOption(option2);
+            const container = document.querySelector('#pie');
+            beyondEcharts.init(container);
+            beyondEcharts.setOption(option1);
+            const container2 = document.querySelector('#pi2');
+            beyondEcharts.init(container2);
+            beyondEcharts.setOption(option2);
             })();
         </script>
     </body>
