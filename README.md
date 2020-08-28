@@ -10,15 +10,15 @@
 
 ### 安装
 
-\```
+```
 
 npm i beyond-echarts
 
-\```
+```
 
 ### 页面使用1
 
-\```
+```
 
 import Charts from "beyond-echarts";
 
@@ -30,7 +30,7 @@ charts.init(container);
 
 charts.setOption(option);
 
-\```
+```
 
 ### 页面使用2
 
