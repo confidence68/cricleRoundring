@@ -1,6 +1,6 @@
 {
   "name": "beyond-echarts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "项目中有用到一些常用图表库没有的图表,就此收集下,现在有圆角环形图",
   "main": "dist/beyond-echarts.js",
   "scripts": {
