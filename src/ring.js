@@ -52,8 +52,8 @@ Ring.prototype.drawRing = function (ctx, startAngle, percentArray, criclex, cric
     //小圆圈覆盖
     // 开始绘制
     ctx.beginPath();
-    // 一单位的弧长
-    let unitArc = 1 /  _this.radius;
+    // 一单位的弧长 * 4
+    let unitArc = (1 /  _this.radius) * 4;
     // 以(criclex,cricley)为圆心, 绘制一条弧线，弧线半径为 radius，起始角度(startAngle + unitArc)和结束角度startAngle + unitArc, 是否逆时针(false)
     ctx.arc(criclex, cricley, _this.radius, startAngle + unitArc, startAngle + unitArc, false);
     // 描边色
