@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="full-screen" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta content="圆角环形" name="keywords" />
+        <meta content="圆角环形" name="description" />
+        <title>圆角环形</title>
+    </head>
+
+    <body>
+        <div id="pie" style="width: 300px; height: 300px;"></div>
+        <div id="pi2" style="width: 300px; height: 300px;"></div>
+        <div id="pi3" style="width: 200px; height: 200px;"></div>
+        <script type="text/javascript"  src="../dist/beyond-echarts.js">
+        </script>
+        <script>
+           (function(){
+            const option1 = {
+                        series:[ {
+                            type: 'pie',
+                            capType: 'round',
+                            radius: ['65%', '35%'],
+                            data: [
+                                {
+                                    value: 400, 
+                                    name: '直接访问',
+                                    itemStyle: {
+                                        color: {
+                                            type: 'linear',
+                                            x: 0,
+                                            y: 0,
+                                            x2: 0,
+                                            y2: 1,
+                                            colorStops: [{
+                                                offset: 0, color: '#FFCE35' // 0% 处的颜色
+                                            }, {
+                                                offset: 1, color: '#FFA219' // 100% 处的颜色
+                                            }],
+                                            global: false // 缺省为 false
+                                        }
+                                    }
+                                },
+                                {
+                                    value: 800, 
+                                    name: '直接访问',
+                                    itemStyle: {
+                                        color: {
+                                            type: 'linear',
+                                            x: 0,
+                                            y: 0,
+                                            x2: 0,
+                                            y2: 1,
+                                            colorStops: [{
+                                                offset: 0, color: '#29C38C' // 0% 处的颜色
+                                            }, {
+                                                offset: 1, color: '#0DB880' // 100% 处的颜色
+                                            }],
+                                            global: false // 缺省为 false
+                                        }
+                                    }
+                                },
+                                {
+                                    value: 405, 
+                                    name: '直接访问',
+                                    itemStyle: {
+                                        color: {
+                                            type: 'linear',
+                                            x: 0,
+                                            y: 0,
+                                            x2: 0,
+                                            y2: 1,
+                                            colorStops: [{
+                                                offset: 0, color: '#F74B53' // 0% 处的颜色
+                                            }, {
+                                                offset: 1, color: '#FB828B' // 100% 处的颜色
+                                            }],
+                                            global: false // 缺省为 false
+                                        }
+                                    }
+                                },
+                            ]
+                        }]
+                }
+            const option2 = {
+                series:[ {
+                    type: 'pie',
+                    capType: 'round',
+                    radius: ['80%', '20%'],
+                    data: [
+                        {
+                            value: 600, 
+                            name: '直接访问',
+                            itemStyle: {
+                                color: '#FFCE35'
+                            }
+                        },
+                        {
+                            value: 1000, 
+                            name: '直接访问',
+                            itemStyle: {
+                                color: '#29C38C'
+                            }
+                        },
+                        {
+                            value: 405, 
+                            name: '直接访问',
+                            itemStyle: {
+                                color: '#F74B53'
+                            }
+                        },
+                    ]
+                }]
+            }
+            const option3 = {"series":[{"type":"pie","capType":"round","radius":["85%","15%"],"data":[{"value":6,"name":"海报","itemStyle":{"color":{"type":"linear","x":0,"y":0,"x2":170,"y2":1,"colorStops":[{"offset":0,"color":"#FFCE35"},{"offset":1,"color":"#FFA219"}],"global":false}}},{"name":"资讯","value":0,"itemStyle":{"color":""}},{"value":7,"name":"圈子","itemStyle":{"color":{"type":"linear","x":0,"y":0,"x2":170,"y2":1,"colorStops":[{"offset":0,"color":"#F74B53"},{"offset":1,"color":"#FB828B"}],"global":false}}}]}]};
+            const container = document.querySelector('#pie');
+            beyondEcharts.init(container);
+            beyondEcharts.setOption(option1);
+            const container2 = document.querySelector('#pi2');
+            beyondEcharts.init(container2);
+            beyondEcharts.setOption(option2);
+            const container3 = document.querySelector('#pi3');
+            beyondEcharts.init(container3);
+            beyondEcharts.setOption(option3);
+            })();
+        </script>
+    </body>
+
+</html>

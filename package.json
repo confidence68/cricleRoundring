@@ -1,0 +1,32 @@
+{
+  "name": "beyond-echarts",
+  "version": "1.0.3",
+  "description": "项目中有用到一些常用图表库没有的图表,就此收集下,现在有圆角环形图",
+  "main": "dist/beyond-echarts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BruceWang99/cricleRoundring.git"
+  },
+  "keywords": [
+    "圆角环形图",
+    "环形图"
+  ],
+  "author": "haorooms、brucewang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BruceWang99/cricleRoundring/issues"
+  },
+  "homepage": "https://github.com/BruceWang99/cricleRoundring#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

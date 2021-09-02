@@ -1,36 +1,196 @@
 ## 前言
-百度echart中并没有圆角环形图，highchart的圆角环形图和项目中的有些出入，因此，写了一个，在这里分享一下
-
-## 示例图片
-
-![示例图片](https://github.com/confidence68/cricleRoundring/blob/master/exmaple.png)
-
-## 参数
 
 
-	 * @param {type} radius 圆环半径
-	 * @param {type} lineWidth 圆环宽度
-	 * @param {type} strokeStyle 默认背景
-	 * @param {type} fillStyleArray 数组，圆环色块颜色
-	 * @param {type} capType 类型：round是圆角，square正方形顶帽，butt是正常
-	 * @param {type} percentArray ，数字，每个占据的百分比
-	 * @param {type} startAngle 开始的角度
-	 * @param {type} criclex，cricley 圆心坐标，一般是canvas的一半，例如：canvas给的宽度是250，高度是250，那么criclex是125
-	 * @returns {Circle} 
+
+项目中有用到一些常用图表库没有的图表,就此收集下,现在只有圆角环形图
 
 
 
 ## 使用方法
 
+### 安装
 
-	            var canvas = document.getElementById('canvas');
-	            var ctx = canvas.getContext('2d');
-	            var ring = new Ring("80", "25", "#ccc", ["#a1b91d", "#e9636a", "#e7ba21"], "round");
-	            ring.drawRing(ctx, 2 * Math.PI / 3, [20, 50, 30],125,125);//占据的百分比分别是20%，50%，30%,圆心是125，,125
+```
+
+npm i beyond-echarts
+
+```
+
+### 页面使用1
+
+```
+
+import Charts from "beyond-echarts";
 
 
 
-## demo案例
+const container = document.querySelector('#pie');
 
-http://resource.haorooms.com/uploads/demo/canvas/cricleRoundring/yuanhuan.html
+charts.init(container);
 
+charts.setOption(option);
+
+```
+
+### 页面使用2
+
+```
+
+<script type="text/javascript"  src="../dist/beyond-echarts.js"></script>
+
+
+
+<script type="text/javascript">
+
+​    const container = document.querySelector('#pie');
+
+​    beyondEcharts.init(container);
+
+​    beyondEcharts.setOption(option1);
+
+</script>
+```
+
+
+
+## 配置 (和echarts一样)
+
+```
+const option = {
+
+​                        series:[ {
+
+​                            type: 'pie',
+
+​                            capType: 'round',
+
+​                            radius: ['65%', '35%'],
+
+​                            data: [
+
+​                                {
+
+​                                    value: 400, 
+
+​                                    name: '直接访问',
+
+​                                    itemStyle: {
+
+​                                        color: {
+
+​                                            type: 'linear',
+
+​                                            x: 0,
+
+​                                            y: 0,
+
+​                                            x2: 0,
+
+​                                            y2: 1,
+
+​                                            colorStops: [{
+
+​                                                offset: 0, color: '#FFCE35' // 0% 处的颜色
+
+​                                            }, {
+
+​                                                offset: 1, color: '#FFA219' // 100% 处的颜色
+
+​                                            }],
+
+​                                            global: false // 缺省为 false
+
+​                                        }
+
+​                                    }
+
+​                                },
+
+​                                {
+
+​                                    value: 800, 
+
+​                                    name: '直接访问',
+
+​                                    itemStyle: {
+
+​                                        color: {
+
+​                                            type: 'linear',
+
+​                                            x: 0,
+
+​                                            y: 0,
+
+​                                            x2: 0,
+
+​                                            y2: 1,
+
+​                                            colorStops: [{
+
+​                                                offset: 0, color: '#29C38C' // 0% 处的颜色
+
+​                                            }, {
+
+​                                                offset: 1, color: '#0DB880' // 100% 处的颜色
+
+​                                            }],
+
+​                                            global: false // 缺省为 false
+
+​                                        }
+
+​                                    }
+
+​                                },
+
+​                                {
+
+​                                    value: 405, 
+
+​                                    name: '直接访问',
+
+​                                    itemStyle: {
+
+​                                        color: {
+
+​                                            type: 'linear',
+
+​                                            x: 0,
+
+​                                            y: 0,
+
+​                                            x2: 0,
+
+​                                            y2: 1,
+
+​                                            colorStops: [{
+
+​                                                offset: 0, color: '#F74B53' // 0% 处的颜色
+
+​                                            }, {
+
+​                                                offset: 1, color: '#FB828B' // 100% 处的颜色
+
+​                                            }],
+
+​                                            global: false // 缺省为 false
+
+​                                        }
+
+​                                    }
+
+​                                },
+
+​                            ]
+
+​                        }]
+
+​                } 
+```
+
+[echarts Api文档](https://echarts.apache.org/en/api.html)        
+
+## demo 
+
+https://brucewang99.github.io/beyond-echarts/demo/index.html
